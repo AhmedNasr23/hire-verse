@@ -4,7 +4,9 @@ import LandingPage from './components/LandingPage';
 import HomePage from './components/HomePage'; // ← import your HomePage component
 import { Route, Routes } from 'react-router';
 import { ToastContainer } from 'react-toastify';
-import Portal from './components/Portal';
+import PortalLayout from './components/PortalLayout';
+import MetricOverview from './components/MetricOverview';
+import MetricDetail from './components/MetricDetail';
 
 const App = () => {
   // const [view, setView] = useState('landing'); // 'landing' | 'auth' | 'home'
@@ -20,12 +22,14 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/portal" element={<Portal />} />
-      </Routes>
+        {/* <Route path="/portal" element={<Portal />} />
+        <Route path="/portal/:label" element={<Portal />} /> */}
 
-      {/* {view === 'landing' && <LandingPage onStart={handleStart} />} */}
-      {/* {view === 'auth' && <AuthPage onAuthSuccess={handleLoginSuccess} />} */}
-      {/* {view === 'home' && <HomePage />} */}
+        <Route path="/portal" element={<PortalLayout />}>
+          <Route index element={<MetricOverview />} />
+          <Route path=":metricName" element={<MetricDetail />} />
+        </Route>
+      </Routes>
     </>
   );
 };
