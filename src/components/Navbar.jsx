@@ -7,8 +7,8 @@ const Navbar = () => {
       <div className="navbar-logo">
         &lt;// <span>HIREVERSE</span> //&gt;
       </div>
-      <div className="navbar-icons">
-        <FaPlusCircle className="nav-icon" />
+      {/*<div className="navbar-icons">
+        <FaPlusCircle className="nav-icon" />*/}
 
         <Link to={'/portal'}>
           <div className="nav-avatar">
@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-    </div>
+   /* </div>*/
   );
 };
 
