@@ -154,6 +154,20 @@ body, html {
   padding-top: 80px;       /* Space for navbar */
 }
 
+/* Logo (top-left corner) */
+.logo-container {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 10;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Top left brand name */
 .header-text {
   position: absolute;
