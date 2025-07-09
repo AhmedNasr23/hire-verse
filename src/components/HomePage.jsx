@@ -6,6 +6,8 @@ import img1_1 from '../assets/img1.1.png';
 import img2_1 from '../assets/img2.1.png';
 import img3_1 from '../assets/img3.1.png';
 import Navbar from './Navbar';
+import logo from '../assets/logo.png';
+
 
 const HomePage = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -33,14 +35,24 @@ const HomePage = () => {
       <Navbar />
 
       {/* === WHY HIREVERSE SECTION === */}
-      <section className="hero-section">
-        <h1 className="home-title">
-          Why <span className="highlight">HIREVERSE</span>?
+      <section className="hero-section text-center px-4 py-10">
+        {/* ✅ Logo centered above the title */}
+        <div className="flex justify-center mb-6">
+          <img
+            src={logo}
+            alt="HIREVERSE Logo"
+            className="w-28 h-28 object-contain"
+          />
+        </div>
+
+        <h1 className="home-title text-4xl font-bold mb-4">
+          Why <span className="highlight text-[#00d9ff]">HIREVERSE</span>?
         </h1>
-        <p className="home-text">
+
+        <p className="home-text text-lg max-w-2xl mx-auto text-gray-700">
           According to surveys, <strong>63%</strong> of young professionals
           don't do mock interviews. With{' '}
-          <span className="highlight">HIREVERSE</span>, gain the practice and
+          <span className="highlight text-[#00d9ff] font-semibold">HIREVERSE</span>, gain the practice and
           confidence you need to stand out.
         </p>
       </section>
