@@ -158,14 +158,15 @@ body, html {
 .logo-container {
   position: absolute;
   top: 30px;
-  left: 40px;
+  left: 100px;
   z-index: 10;
 }
 
 .logo-img {
-  width: 120px;
+  width: 125px;
   height: auto;
   object-fit: contain;
+  margin-left: 30px;
 }
 
 /* Top left brand name */
@@ -181,11 +182,11 @@ body, html {
 
 /* Image under header on left */
 .image-container {
-  margin-top: 150px;
+  margin-top: 140px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 10px;
+  padding-left: 1px;
 }
 
 .ai-image {
