@@ -36,12 +36,12 @@ const HomePage = () => {
 
       {/* === WHY HIREVERSE SECTION === */}
       <section className="hero-section text-center px-4 py-10">
-        {/* ✅ Logo centered above the title */}
+        {/* Logo centered above the title */}
         <div className="flex justify-center mb-6">
           <img
             src={logo}
             alt="HIREVERSE Logo"
-            className="w-28 h-28 object-contain"
+            className="w-60 h-40 object-contain"
           />
         </div>
 
